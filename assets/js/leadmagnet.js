@@ -19,7 +19,7 @@ $(function () {
 
     var jsondata = JSON.stringify(data);
 
-    alert(jsondata);
+    // alert(jsondata);
 
         $.ajax({
         type: "POST",
