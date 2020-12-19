@@ -23,7 +23,7 @@ $(function () {
 
         $.ajax({
         type: "POST",
-        url: "http://crm.equinoxlab.com/api/Lead_Management.svc/Insert_Lead",
+        url: "https://crm.equinoxlab.com/api/Lead_Management.svc/Insert_Lead",
         data: jsondata,
         success: function (data) {
             alert(data.response);
