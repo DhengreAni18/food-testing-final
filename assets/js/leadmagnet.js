@@ -31,6 +31,9 @@ $(document).ready(function () {
             // console.log(data.response);
             window.location.replace("../../deadly-organism-thankyou.html");
         },
+        error: function(data) {
+      console.log("ERROR: ", data);
+    },
         contentType: "application/json",
         dataType: "json",
         });
