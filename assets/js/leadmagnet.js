@@ -1,7 +1,7 @@
 // this form is for leadmagnets of top 5
  
 
-$(document).ready(function () {
+$(function () {
     $("#form_leadmagnet").on("submit", function (e) {
     e.preventDefault();
 
@@ -25,10 +25,8 @@ $(document).ready(function () {
         type: "POST",
         url: "https://crm.equinoxlab.com/api/Lead_Management.svc/Insert_Lead",
         data: jsondata,
-        async: false,
-        processData: false,
         success: function (data) {
-            // console.log(data.response);
+            console.log(data.response);
             window.location.replace("../../deadly-organism-thankyou.html");
         },
         error: function(data) {
