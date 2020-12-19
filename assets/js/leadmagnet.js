@@ -23,14 +23,14 @@ $(function () {
 
         $.ajax({
         type: "POST",
-        url: "https://crm.equinoxlab.com/api/Lead_Management.svc/Insert_Lead",
+        url: "http://crm.equinoxlab.com/api/Lead_Management.svc/Insert_Lead",
         data: jsondata,
         success: function (data) {
-            console.log(data.response);
+            alert(data.response);
             window.location.replace("../../deadly-organism-thankyou.html");
         },
         error: function(data) {
-      console.log("ERROR: ", data);
+      alert("ERROR: ", data);
     },
         contentType: "application/json",
         dataType: "json",
